@@ -1,4 +1,0 @@
-servlet\LogoutServlet.class
-JwtTools\JwtUtils.class
-servlet\appServlet.class
-filter\LoginFilter.class

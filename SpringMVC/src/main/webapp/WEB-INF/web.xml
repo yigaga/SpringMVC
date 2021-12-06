@@ -1,0 +1,53 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/j2ee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         metadata-complete="false" version="4.0">
+         
+  <servlet>
+    <servlet-name>SpringMVC</servlet-name>
+    <servlet-class>cqu.mvc.servlet.CoreServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>WEB-INF/applicationContext.properties</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/user/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/user/signup</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/disk/show</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/disk/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/disk/download</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/disk/load</url-pattern>
+  </servlet-mapping>
+	<servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/disk/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/disk/share</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/disk/shared</url-pattern>
+  </servlet-mapping>
+
+  <display-name>Archetype Created Web Application</display-name>
+</web-app>
